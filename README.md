@@ -12,7 +12,3 @@ laravel 阿里云opensearch
 1.  composer require dachen/opensearch
 2.  php artisan vendor:publish --provider="Dachen\Opensearch\AliOpenSearchProvider"
 
-
-
-
-
