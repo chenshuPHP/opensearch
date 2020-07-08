@@ -1,0 +1,35 @@
+{
+    "name": "dachen/opensearch",
+    "description": "aliyun opensearch",
+    "type": "library",
+    "authors": [
+        {
+            "name": "aliyun",
+            "homepage": "http://www.aliyun.com"
+        }
+    ],
+    "homepage": "https://www.aliyun.com/product/opensearch",
+    "version": "v3.1.3",
+    "require": {
+        "php": ">=5.3"
+    },
+    "license": [
+         "MIT"
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Dachen\\Opensearch\\": "src/"
+        },
+        "files": [
+            "src/OpenSearch/Autoloader/Autoloader.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dachen\\Opensearch\\AliOpenSearchProvider"
+            ]
+        }
+    }
+}
