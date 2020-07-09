@@ -7,6 +7,7 @@ laravel 阿里云opensearch
 软件架构说明
 
 
+
 #### 安装教程
 
 1.  composer require dachen/opensearch
