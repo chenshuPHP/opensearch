@@ -49,7 +49,7 @@ class AliOpenSearch{
             'appName'   => $this->config['appName'],
             'start'     => $start,
             'hits'      => $hits,
-            'query'     => "default:'{$query}'",
+            'query'     => $query,
             'filter'    => $filter,
             'sort'      => $sort,
             'format'    => 'json'
