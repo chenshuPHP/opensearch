@@ -66,12 +66,20 @@ class AliOpenSearch{
         }
 
         $result = json_decode($ret,true);
+
+
+        $data['corrected_query'] = $result['qp'][0]['query_correction_info']['corrected_query']??'';
+
         if(empty($result['result']['items']))
         {
-            return [];
+            $data['result'] = [];
+        }
+        else
+        {
+            $data['id'] = Arr::pluck($result['result']['items'],'id');
         }
 
-        return Arr::pluck($result['result']['items'],'id');
+        return $data;
 
     }
 
