@@ -68,7 +68,7 @@ class AliOpenSearch{
         $result = json_decode($ret,true);
 
 
-        $data['corrected_query'] = $result['qp'][0]['query_correction_info']['corrected_query']??'';
+        $data['corrected_query'] = $result['qp'][0]['query_correction_info'][0]['corrected_query']??'';
 
         if(empty($result['result']['items']))
         {
